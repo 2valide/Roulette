@@ -10,6 +10,11 @@ function addOptionField() {
       `;
     optionsList.appendChild(optionField);
 
+    const optionField2 = document.createElement("container-options");
+    optionField2.innerHTML = `
+          <div class="option-input">${optionInputs}</div>
+      `;
+
     // Après l'ajout d'un champ d'option, recalculer les pourcentages et sauvegarder les options dans le stockage local
     updatePercentagesAndSave();
 }
